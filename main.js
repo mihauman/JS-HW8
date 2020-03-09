@@ -41,7 +41,7 @@ class BudgetStudent extends StudentInfo {
     super(university, course, fullName);
     this.marksArray =  [5, 5, 5, 3];
     this.dismiss = false;  
-   setTimeout(()=>{this.getScholarship()},30000);
+   setInterval(()=>{this.getScholarship()},30000);
   }
  
  getScholarship(){
