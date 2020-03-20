@@ -11,15 +11,18 @@ getInfo(){
     return  `${this.course} ${this.university} ${this.fullName}`;
   }  
 //#3
-getMarks(){
-  if(this.dismiss){
+get marks(){
+  if (!this.dismiss) {
     return null;
   }
   return this.marksArray;
 }
 //#4
-setMarks(mark){
-  return this.marksArray.push(mark);
+set marks(mark){
+  if (!this.dismiss) {
+    return this.marksArray.push(mark);
+    }
+    return null;
 }
 //#5
 getAverageMark(){
