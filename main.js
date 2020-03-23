@@ -20,9 +20,9 @@ get marks(){
 //#4
 set marks(mark){
   if (!this.dismiss) {
-    return this.marksArray.push(mark);
-    }
     return null;
+    }
+    return this.marksArray.push(mark);
 }
 //#5
 getAverageMark(){
